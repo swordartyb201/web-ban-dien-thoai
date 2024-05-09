@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - SmartPhone Store</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://www.thegioididong.com/tin-tuc/danh-gia-iphone-13-pro-max-cap-nhat-ios-16-1-1482155" target="_blank">
+                    <img src="img/tintuc/tintuc1.png">
+                    <h2>Đánh giá iPhone 13 Pro Max cập nhật iOS 16.1: Pin và hiệu năng tốt hơn nhưng nóng máy!</h2>
+                </a>
+                <br/>
+                <h5>Thế giới di động &emsp;11 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.thegioididong.com/tin-tuc/redmi-note-11-pro-bat-ngo-bi-ro-ri-cau-hinh-tren-geekbench-1482343" target="_blank">
+                    <img src="img/tintuc/tintuc2.png">
+                    <h2>Redmi Note 11 Pro 2023 bất ngờ bị rò rỉ cấu hình trên Geekbench</h2>
+                </a>
+                <br/>
+                <h5>Thế giới di động &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.thegioididong.com/tin-tuc/realme-10-4g-bat-ngo-bi-ro-ri-hinh-anh-thuc-te-1482322" target="_blank">
+                    <img src="img/tintuc/tintuc3.png">
+                    <h2>realme 10 4G bất ngờ bị rò rỉ hình ảnh thực tế và thông số trước thềm ra mắt</h2>
+                </a>
+                <br/>
+                <h5>Thế giới di động &emsp; 15 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.thegioididong.com/tin-tuc/realme-10-chinh-thuc-xac-nhan-co-helio-g99-1482281" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>realme chính thức xác nhận dòng realme 10 sẽ có chip Helio G cao cấp</h2>
+                </a>
+                <br/>
+                <h5>Thế giới di động &emsp; 18 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://www.thegioididong.com/tin-tuc/cung-nhau-kham-pha-mot-vai-thong-so-cua-oppo-a98-1482294" target="_blank">
+                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <h2>Cùng nhau khám phá một vài thông số của OPPO A98 trước thềm ra mắt</h2>
+                </a>
+                <br/>
+                <h5>Thế giới di động &emsp; 20 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
